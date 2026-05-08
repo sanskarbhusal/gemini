@@ -26,8 +26,8 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <TopBar />
-        <Sidebar />
-        {/* {children} */}
+        {/* <Sidebar /> */}
+        {children}
       </body>
     </html>
   );

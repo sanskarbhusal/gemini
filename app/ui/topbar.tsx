@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 export function TopBar() {
     return (
         <div className="flex justify-between items-center m-3 ml-0 h-12">
@@ -50,14 +48,6 @@ export function TopBar() {
                     className="rounded-full h-8.5 w-8.5"
                 />
             </div>
-        </div>
-    )
-}
-
-export function SideBar() {
-    return (
-        <div>
-
         </div>
     )
 }

@@ -7,7 +7,7 @@ export function TopBar() {
 
             <button className="group relative w-10 h-10 ml-3 flex justify-center items-center rounded-full">
                 <HamBurgerIcon />
-                <Sidebar className="group-focus:w-77" />
+                <Sidebar className="group-focus:w-77 w-77" />
             </button>
 
             <div className="p-2 flex gap-4.75 justify-between items-center">

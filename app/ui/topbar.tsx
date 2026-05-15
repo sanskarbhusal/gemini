@@ -1,5 +1,6 @@
+"use client"
+
 import { HamBurgerIcon, EditSquareIcon, ShareIcon, ThreeDotIcon } from "@/app/ui/icons"
-import { Sidebar } from "./sidebar"
 
 export function TopBar({ className }: { className?: string }) {
     return (

@@ -3,8 +3,6 @@
 import { HamBurgerIcon } from "./icons"
 import { chatList } from "@/app/lib/data"
 import { ChatItem } from "@/app/ui/chatItem"
-import { useState } from "react"
-import { clsx } from "clsx"
 
 export function Sidebar({ className }: { className?: string }) {
 

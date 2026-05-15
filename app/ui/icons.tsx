@@ -1,3 +1,5 @@
+"use client"
+
 export function HamBurgerIcon({ className }: { className?: string }) {
     return (
         <div className="w-9.75 h-9.75 flex items-center rounded-full hover:bg-gray-300/43 transition-colors">

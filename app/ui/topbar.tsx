@@ -1,17 +1,10 @@
 import { HamBurgerIcon, EditSquareIcon, ShareIcon, ThreeDotIcon } from "@/app/ui/icons"
 import { Sidebar } from "./sidebar"
 
-export function TopBar() {
+export function TopBar({ className }: { className?: string }) {
     return (
-        <div className="flex justify-between items-center m-3 ml-0 h-12">
-
-            <button className="group relative w-10 h-10 ml-3 flex justify-center items-center rounded-full">
-                <HamBurgerIcon />
-                <Sidebar className="group-focus:w-77 w-77" />
-            </button>
-
+        <div className={`h-12 flex justify-between items-center m-3 ml-0 ${className}`}>
             <div className="p-2 flex gap-4.75 justify-between items-center">
-
                 <EditSquareIcon />
                 <ShareIcon />
                 <ThreeDotIcon />

@@ -1,5 +1,3 @@
-"use client"
-
 import { ThreeDotIcon } from "@/app/ui/icons"
 
 export function ChatItem({ text, className }: { text?: string, className?: string }) {

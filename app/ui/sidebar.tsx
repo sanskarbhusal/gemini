@@ -1,6 +1,3 @@
-"use client"
-
-import { HamBurgerIcon } from "./icons"
 import { chatList } from "@/app/lib/data"
 import { ChatItem } from "@/app/ui/chatItem"
 

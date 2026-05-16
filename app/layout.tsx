@@ -1,5 +1,3 @@
-"use client"
-
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
@@ -12,10 +10,10 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-// export const metadata: Metadata = {
-//   title: "Gemini Clone",
-//   description: "Built by Sanskar Bhusal",
-// };
+export const metadata: Metadata = {
+  title: "Gemini Clone",
+  description: "Built by Sanskar Bhusal",
+};
 
 export default function RootLayout({
   children,

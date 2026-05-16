@@ -1,7 +1,5 @@
-"use client"
-
-import { HamBurgerIcon, EditSquareIcon, ShareIcon, ThreeDotIcon } from "@/app/ui/icons"
-
+import { EditSquareIcon, ShareIcon, ThreeDotIcon } from "@/app/ui/icons"
+import Image from "next/image"
 export function TopBar({ className }: { className?: string }) {
     return (
         <div className={`h-12 flex justify-between items-center m-3 ml-0 ${className}`}>
@@ -9,10 +7,12 @@ export function TopBar({ className }: { className?: string }) {
                 <EditSquareIcon />
                 <ShareIcon />
                 <ThreeDotIcon />
-                <img
+                <Image
+                    width={34}
+                    height={34}
                     src="/me2.png"
                     alt="Avatar Image"
-                    className="rounded-full h-8.5 w-8.5"
+                    className="rounded-full"
                 />
             </div>
         </div>

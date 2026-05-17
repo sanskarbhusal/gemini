@@ -26,12 +26,10 @@ export default function RootLayout({
       className={`${geistSans.className} h-full antialiased`}
     >
       <body className="relative z-0 min-h-full flex flex-col">
-        <button className="peer w-full h-fit ml-3 flex justify-between items-center">
-          <HamBurgerIcon className="w-10" />
-          <TopBar className="" />
-        </button>
-        <Sidebar className="fixed z-20 -left-80 peer-focus:left-0" />
-        <div className="fixed -z-10 h-screen w-full opacity-45 transparent peer-focus:bg-black peer-focus:z-10 transition-colors duration-300"></div>
+        <TopBar className="z-10" />
+        <HamBurgerIcon className="peer fixed z-20 top-4 left-3 w-10" />
+        <Sidebar className="fixed z-30 -left-80 peer-focus:left-0" />
+        {/* <div className="fixed -z-10 h-screen w-full opacity-45 transparent peer-focus:bg-black peer-focus:z-10 transition-colors duration-300"></div> */}
         {children}
       </body>
     </html>

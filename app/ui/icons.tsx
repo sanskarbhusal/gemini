@@ -1,14 +1,14 @@
 export function HamBurgerIcon({ className }: { className?: string }) {
     return (
-        <div className="w-9.75 h-9.75 flex items-center rounded-full hover:bg-gray-300/43 transition-colors">
+        <button className={`w-9.75 h-9.75 flex items-center rounded-full hover:bg-gray-300/43 transition-colors ${className}`}>
             <svg
                 height="18px"
                 width="18x"
                 viewBox="0 -960 960 960"
-                className={`fill-[#444747] dark:fill-[#C4C7C5] ${className}`}>
+                className={`fill-[#444747] dark:fill-[#C4C7C5]`}>
                 <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
             </ svg>
-        </div>
+        </button>
     )
 }
 

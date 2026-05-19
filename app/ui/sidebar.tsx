@@ -9,16 +9,14 @@ export function Sidebar({ className }: { className?: string }) {
             <div className="w-full px-2.5 flex flex-col justify-between pb-3.25">
 
                 <div>
-                    <div className="flex">
+                    <label className="flex pl-3.5 font-sans font-medium text-[#757575]" htmlFor="recent-dropdown">
                         {/* Checkbox to manage dropdown state*/}
                         <input type="checkbox" id="recent-dropdown" className="peer hidden" />
-                        <label className="group pl-3.5 font-sans font-medium text-[#757575]" htmlFor="recent-dropdown">
-                            Recent
-                        </label>
+                        Recent
                         <div className="peer-checked:rotate-90 ml-2.75 flex items-center font-sans">
-                            <AngleBracket className="w-3.25 h-3.25 fill-[#757575] mb-0.75" />
+                            <AngleBracket className="w-3.25 h-3.25 fill-[#757575] mb-0.75" htmlFor="recent-dropdown" />
                         </div>
-                    </div>
+                    </label>
                     {/* List of recent chats */}
                     {chatList.map((item, index) => {
                         return (

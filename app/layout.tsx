@@ -25,7 +25,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.className} h-full antialiased`}
     >
-      <body className="relative z-0 min-h-full flex flex-col antialiased">
+      <body className="relative z-0 min-h-full flex flex-col antialiased select-none">
         <input type="radio" id="sidebar-open" name="sidebar-state" className="peer hidden" />
         <input type="radio" id="sidebar-close" name="sidebar-state" className="hidden" />
         <TopBar className="z-10" />

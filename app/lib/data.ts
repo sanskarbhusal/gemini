@@ -12,7 +12,7 @@ export const chatList = [
         title: "QA's are awesome",
     },
     {
-        title: "Devs are egoistic",
+        title: "Devs are fantastic",
     },
     {
         title: "React.js is a library",
@@ -21,6 +21,6 @@ export const chatList = [
         title: "Redux has a centralized state store test test test test test ",
     },
     {
-        title: "I hate everything",
+        title: "I love programming",
     }
 ]

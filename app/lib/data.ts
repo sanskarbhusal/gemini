@@ -1,12 +1,12 @@
 export const chatList = [
     {
-        title: "lorem ipsum",
+        title: "System Check and Project Discussion",
     },
     {
-        title: "Software",
+        title: "System Check and Project Discussion",
     },
     {
-        title: "Testing is important",
+        title: "System Check and Project Discussion",
     },
     {
         title: "QA's are awesome",

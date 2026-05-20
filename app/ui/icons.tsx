@@ -1,6 +1,6 @@
 export function HamBurgerIcon({ className, htmlFor }: { className?: string, htmlFor?: string }) {
     return (
-        <label className={`w-12 h-12 flex flex-col gap-1.5 justify-center items-center rounded-full hover:bg-[#EEEEEE] transition-colors ${className}`}
+        <label className={`w-12 h-12 flex flex-col gap-1.5 justify-center items-center rounded-full hover:bg-[#EEEEEE] dark:hover:bg-[#101010] transition-colors ${className}`}
             htmlFor={htmlFor}
         >
             <div className="bg-black dark:bg-white h-px w-4.25" ></ div>

@@ -42,7 +42,7 @@ export function ShareIcon({ className }: { className?: string }) {
 export function ThreeDotIcon({ className }: { className?: string }) {
     return (
         <svg
-            className="dark:fill-white"
+            className={className}
             width="30px"
             height="30px"
             viewBox="0 0 24 24"

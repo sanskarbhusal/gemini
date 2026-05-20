@@ -6,7 +6,7 @@ export function ChatItem({ text, className }: { text?: string, className?: strin
             <div className="truncate w-full mr-4.5">
                 {text}
             </div>
-            <ThreeDotIcon className="dark:fill-white rounded-full h-9 w-11.5 p-1.25 hover:bg-[#E4E3E3]" />
+            <ThreeDotIcon className="dark:fill-white rounded-full h-9 w-11 p-1.25 hover:bg-[#E4E3E3] dark:hover:bg-[#222222]" />
         </button>
     )
 }

@@ -1,18 +1,10 @@
-import { EditSquareIcon, ShareIcon, ThreeDotIcon } from "@/app/ui/icons"
+import { NewChatIcon, ShareIcon, ThreeDotIcon } from "@/app/ui/icons"
 import Image from "next/image"
 export function TopBar({ className }: { className?: string }) {
     return (
-        <nav className={`fixed w-full flex gap-5 justify-end items-center h-12 pr-4 m-3 ml-0 ${className}`}>
-            <EditSquareIcon />
-            <ShareIcon />
-            <ThreeDotIcon />
-            <Image
-                width={34}
-                height={34}
-                src="/me2.png"
-                alt="Avatar Image"
-                className="rounded-full"
-            />
+        <nav className={`fixed w-full flex justify-end items-center h-15.5 pr-3.5  ${className}`}>
+            <NewChatIcon className="hover:bg-[#EEEEEE] flex justify-center items-center w-8.75 h-8.75 p-1.5 rounded-full" />
+            <ThreeDotIcon className="hover:bg-[#EEEEEE] rounded-full w-8.75 h-8.75 p-1.5" />
         </nav>
     )
 }

@@ -1,28 +1,32 @@
 import { chatList } from "@/app/lib/data"
 import { ChatItem } from "@/app/ui/chatItem"
-import { AngleBracket } from "@/app/ui/icons"
+import { AngleBracket, NavbarIcon } from "@/app/ui/icons"
 import Image from "next/image"
 
 export function Sidebar({ className }: { className?: string }) {
     return (
         <div className={`bg-white px-2.75 border-solid border border-gray-200 dark:bg-[#1E1F20] dark:border-none flex justify-left h-screen w-80 rounded-r-2xl transition-all duration-300 ease-out ${className}`}>
             <div className="w-full flex flex-col justify-between">
-                <div>
-                    <details className="group flex flex-col font-sans font-[455] text-[#757575]">
-                        <summary className="list-none flex pl-3.75">
-                            Recent
-                            <AngleBracket className="group-open:rotate-90 ml-2.25 w-3.25 h-3.2 fill-[#757575] mb-0.75" />
-                        </summary>
 
-                        <div className="group-not-open:hidden">
-                            {chatList.map((item, index) => {
-                                return (
-                                    <ChatItem key={index} text={item.title} />
-                                )
-                            })}
-                        </div>
-                    </details>
+                <div className="w-full flex justify-end p-8" >
+                    <NavbarIcon className="" />
                 </div>
+
+                {/* Chat list section */}
+                <details className="group flex flex-col font-sans font-[455] text-[#757575]">
+                    <summary className="list-none flex pl-3.75">
+                        Recent
+                        <AngleBracket className="group-open:rotate-90 ml-2.25 w-3.25 h-3.2 fill-[#757575] mb-0.75" />
+                    </summary>
+
+                    <div className="group-not-open:hidden">
+                        {chatList.map((item, index) => {
+                            return (
+                                <ChatItem key={index} text={item.title} />
+                            )
+                        })}
+                    </div>
+                </details>
 
                 {/* Settings and Avatar */}
                 <div className="flex justify-between items-center h-13 pr-3">

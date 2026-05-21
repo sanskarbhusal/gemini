@@ -13,7 +13,7 @@ const googleSansFlex = Google_Sans_Flex({
 
 export function Sidebar({ className }: { className?: string }) {
     return (
-        <div className={`bg-white px-2.75 pt-1.75 border-solid border border-gray-200 dark:bg-[#1E1F20] dark:border-none flex justify-left h-screen w-80 rounded-r-2xl transition-all duration-300 ease-out ${className}`}>
+        <div className={`bg-white px-2.75 pt-1.75 border-solid border border-gray-200 dark:bg-[#1C1C1C] dark:border-none flex justify-left h-screen w-80 rounded-r-2xl transition-all duration-300 ease-out ${className}`}>
             <div className="w-full flex flex-col">
 
                 <div className="w-full h-12 flex justify-between items-center pl-2.5 pr-4" >

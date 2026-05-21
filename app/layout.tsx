@@ -5,11 +5,6 @@ import { TopBar } from "@/app/ui/topbar"
 import { Sidebar } from "@/app/ui/sidebar"
 import { HamBurgerIcon } from "@/app/ui/icons"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: "Gemini Clone",
   description: "Built by Sanskar Bhusal",
@@ -23,7 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.className} h-full antialiased`}
+      className={` h-full antialiased`}
     >
       <body className="relative z-0 min-h-full flex flex-col antialiased select-none">
         <input type="radio" id="sidebar-open" name="sidebar-state" className="peer hidden" />

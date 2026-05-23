@@ -15,22 +15,9 @@
     --background: #000000;
     --foreground: #FFFFFF;
 
-    ::-webkit-scrollbar {
-      width: 8px;
-      /* Width of the vertical scrollbar */
-      height: 8px;
-      /* Height of the horizontal scrollbar */
-    }
-
-    ::-webkit-scrollbar-track {
-      background: transparent;
-      width: 8px;
-    }
-
     ::-webkit-scrollbar-thumb {
       border-radius: 9999px;
       background-color: #333537;
-
     }
 
     ::-webkit-scrollbar-thumb:hover {
@@ -60,7 +47,6 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 9999px;
   background-color: #DDE3EA;
-
 }
 
 ::-webkit-scrollbar-thumb:hover {

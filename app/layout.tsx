@@ -31,8 +31,8 @@ export default function RootLayout({
         <input type="radio" id="sidebar-close" name="sidebar-state" className="hidden" />
         <TopBar className="z-10" />
         <HamBurgerIcon className="peer fixed z-20 top-2 left-2 w-10" htmlFor="sidebar-open" />
-        <Sidebar className="fixed z-30 -left-0 peer-checked:left-0" />
-        <label className="h-screen w-full opacity-45 transparent peer-checked:bg-black bg-black absolute peer-checked:z-10 -z-10  transition-colors duration-300"
+        <Sidebar className="fixed z-30 -left-80 peer-checked:left-0" />
+        <label className="h-screen w-full opacity-45 transparent peer-checked:bg-black absolute peer-checked:z-10 -z-10  transition-colors duration-300"
           htmlFor="sidebar-close">
         </label>
         {children}

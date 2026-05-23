@@ -7,7 +7,7 @@ import { NewChatIcon } from "@/app/ui/icons"
 
 export function Sidebar({ className }: { className?: string }) {
     return (
-        <div className={`relative bg-white pl-2 pt-1.75 pb-0.75 border-solid border border-gray-200 dark:bg-[#1C1C1C] dark:border-none w-80 flex flex-col justify-left h-screen rounded-r-2xl transition-all duration-300 ease-out ${className}`}>
+        <div className={`relative bg-white pl-2 pt-1.75 pb-0.75 border-solid border border-gray-200 dark:bg-[#1C1C1C] dark:border-none w-80 flex flex-col h-screen rounded-r-2xl transition-all duration-300 ease-out ${className}`}>
 
             <nav className="relative z-20 w-full flex flex-col justify-between items-center pl-3.25 pr-4 shadow-[-28px_5px_10px_10px_rgb(255,255,255,0.99)] dark:shadow-[#1C1C1C]" >
 
@@ -38,7 +38,7 @@ export function Sidebar({ className }: { className?: string }) {
             </nav >
 
             {/* Chat list section */}
-            < div className="relative z-10 mt-3 overflow-y-auto scroll-smooth custom-scroll" >
+            < div className="relative z-10 w-full h-full mt-3 overflow-y-scroll" >
                 <details className="group flex flex-col font-[455] text-[#757575]" open>
                     <summary className="list-none flex pl-3.75">
                         Recent

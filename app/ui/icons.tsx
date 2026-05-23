@@ -67,7 +67,7 @@ export function AngleBracket({ className, htmlFor }: { className?: string, htmlF
 
 export function NavbarIcon({ className }: { className?: string }) {
     return (
-        <div className="relative w-5 h-5 bg-white border-2 border-black dark:border-[#E0E0E0] dark:bg-transparent rounded-md flex items-center">
+        <div className="relative w-5.25 h-5 bg-white border-2 border-black dark:border-[#E0E0E0] dark:bg-transparent rounded-md flex items-center">
             <div className="relative left-0.75 h-2.75 w-0.5 self-center bg-black dark:bg-[#E0E0E0] rounded-full"></div>
             <div className="peer border-14 border-transparent hover:border-[#EEEEEE] dark:hover:border-[#2A2A2A] z-20 w-13 h-13 absolute -left-4.5 rounded-full"></div>
             <div className="relative left-1.25 hidden peer-hover:flex peer-hover- flex-col justify-center items-center gap-px">
@@ -83,8 +83,8 @@ export function GearIcon({ className }: { className?: string }) {
     return (
         <svg
             className={`stroke-black stroke-[1.25px] dark:stroke-white ${className}`}
-            width="28"
-            height="28"
+            width="32"
+            height="32"
             viewBox="0 0 24 24"
             fill="transparent"
         >

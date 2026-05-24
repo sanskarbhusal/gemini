@@ -92,3 +92,12 @@ export function GearIcon({ className }: { className?: string }) {
         </svg>
     )
 }
+
+export function SearchIcon({ className }: { className?: string }) {
+    return (
+        <div>
+            <div className={` w-4.25 h-4.25 rounded-full border-2 border-black dark:border-[#E0E0E0]  ${className}`}></div>
+            <div className="w-1.75 border border-black dark:border-[#E0E0E0] rotate-45 translate-x-3.25 -translate-y-0.5 "></div>
+        </div>
+    )
+}

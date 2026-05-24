@@ -3,15 +3,15 @@ import { ChatItem } from "@/app/ui/chatItem"
 import { AngleBracket, NavbarIcon, GearIcon } from "@/app/ui/icons"
 import Image from "next/image"
 import Link from "next/link"
-import { NewChatIcon } from "@/app/ui/icons"
+import { NewChatIcon, SearchIcon } from "@/app/ui/icons"
 
 export function Sidebar({ className }: { className?: string }) {
     return (
         <div className={`relative bg-white pl-2 pt-1.75 pb-0.75 border-solid border border-gray-200 dark:bg-[#1C1C1C] dark:border-none w-80 flex flex-col h-screen rounded-r-2xl transition-all duration-300 ease-out ${className}`}>
 
-            <nav className="relative z-20 w-full flex flex-col justify-between items-center pl-3.25 pr-4 shadow-[-28px_5px_10px_10px_rgb(255,255,255,0.99)] dark:shadow-[#1C1C1C]" >
+            <nav className="relative z-20 w-full flex flex-col justify-between items-center pr-4 shadow-[-28px_5px_10px_10px_rgb(255,255,255,0.99)] dark:shadow-[#1C1C1C]" >
 
-                <div className="w-full flex justify-between items-center pr-2.75">
+                <div className="w-full flex justify-between items-center pl-3.25 pr-2.75">
                     <Link className="h-12 flex w-full items-center gap-2.5"
                         href=""
                     >
@@ -28,11 +28,18 @@ export function Sidebar({ className }: { className?: string }) {
                     <NavbarIcon />
                 </div>
 
-                <Link className="h-11 w-full mt-4 gap-2.5 flex items-center rounded-full cursor-pointer font-sans font-medium text-left text-[17px] text-black dark:text-[#E0E0E0] dark:focus:text-white hover:bg-[#EDEDED] focus:bg-[#EDEDED] focus:font-bold dark:hover:bg-[#2C2D2D] dark:focus:bg-[#141414]"
+                <Link className="h-11 w-full pl-3.25 mt-4 gap-2.75 flex items-center rounded-full cursor-pointer font-sans font-medium text-left text-[17px] text-black dark:text-[#E0E0E0] dark:focus:text-white hover:bg-[#EDEDED] focus:bg-[#EDEDED] focus:font-bold dark:hover:bg-[#2C2D2D] dark:focus:bg-[#141414]"
                     href=""
                 >
-                    <NewChatIcon className="w-6.5" />
+                    <NewChatIcon className="w-6.75 pl-px" />
                     New chat
+                </Link>
+
+                <Link className="h-11 w-full pl-4.25 gap-4.25 flex items-center rounded-full cursor-pointer font-sans font-medium text-left text-[17px] text-black dark:text-[#E0E0E0] dark:focus:text-white hover:bg-[#EDEDED] focus:bg-[#EDEDED] focus:font-bold dark:hover:bg-[#2C2D2D] dark:focus:bg-[#141414]"
+                    href=""
+                >
+                    <SearchIcon />
+                    Search chats
                 </Link>
 
             </nav >
